@@ -1,0 +1,36 @@
+{
+  "_class_name": "ControlNetModel",
+  "_diffusers_version": "0.27.2",
+  "addition_time_embed_dim": 256,
+  "bbox_embedding_shape": [
+    4,
+    40,
+    64
+  ],
+  "block_out_channels": [
+    320,
+    640,
+    1280,
+    1280
+  ],
+  "cross_attention_dim": 1024,
+  "down_block_types": [
+    "CrossAttnDownBlockSpatioTemporal",
+    "CrossAttnDownBlockSpatioTemporal",
+    "CrossAttnDownBlockSpatioTemporal",
+    "DownBlockSpatioTemporal"
+  ],
+  "ego_traj_embedding_dim": 128,
+  "in_channels": 8,
+  "layers_per_block": 2,
+  "num_attention_heads": [
+    5,
+    10,
+    20,
+    20
+  ],
+  "num_frames": 25,
+  "projection_class_embeddings_input_dim": 768,
+  "sample_size": null,
+  "transformer_layers_per_block": 1
+}

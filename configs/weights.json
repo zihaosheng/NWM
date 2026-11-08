@@ -1,0 +1,7 @@
+{
+  "unet": "../weights/unet/diffusion_pytorch_model.safetensors",
+  "controlnet": "../weights/controlnet/diffusion_pytorch_model.bin",
+  "null_model": "../weights/null_model/diffusion_pytorch_model.safetensors",
+  "vae": "../weights/vae/diffusion_pytorch_model.safetensors",
+  "image_encoder": "../weights/image_encoder/model.safetensors"
+}
