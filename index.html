@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="Neutral World Model (NWM) learns from routine driving and real accidents to break survivorship bias and support imagination-guided action selection.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NWM | Breaking survivorship bias in driving world models">
+  <meta property="og:description" content="Learning to imagine both routine and safety-critical driving futures.">
+  <meta property="og:url" content="https://zihaosheng.github.io/NWM/">
+  <meta property="og:image" content="https://zihaosheng.github.io/NWM/assets/videos/generations/genvid_85_10_04574.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://zihaosheng.github.io/NWM/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-config.js" defer></script>
+  <script src="script.js" defer></script>
+  <title>NWM | Breaking survivorship bias in driving world models</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="NWM home"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="currentColor"/><path d="M9 25 13 7m6 0 4 18M16 9v4m0 4v5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg><span>NWM<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="#overview">Overview</a><a href="#method">Method</a><a href="#results">Results</a><a href="#video">Video</a><a href="#citation">Citation</a>
+      </nav>
+      <a class="nav-paper" href="https://arxiv.org/abs/2611.11516" target="_blank" rel="noopener">Read paper <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="paper-title">
+      <h1 id="paper-title">Breaking <em>survivorship bias</em> <br>in driving world models</h1>
+      
+      <div class="authors" aria-label="Authors">
+        <a href="https://scholar.google.com/citations?user=3T-SILsAAAAJ" target="_blank" rel="noopener" data-scholar-placeholder title="Google Scholar profile to be added">Zihao Sheng</a>
+        <a href="https://scholar.google.com/citations?user=RgO7ppoAAAAJ" target="_blank" rel="noopener" data-scholar-placeholder title="Google Scholar profile to be added">Zilin Huang</a>
+        <a href="https://scholar.google.com/citations?user=CNdSjWAAAAAJ" target="_blank" rel="noopener" data-scholar-placeholder title="Google Scholar profile to be added">Yuhao Luo</a>
+        <a href="https://scholar.google.com/citations?user=6m8LnLUAAAAJ" target="_blank" rel="noopener" data-scholar-placeholder title="Google Scholar profile to be added">Zhengyang Wan</a>
+        <a href="https://scholar.google.com/citations?user=SCHOLAR_ID_BOYUE_WANG" target="_blank" rel="noopener" data-scholar-placeholder title="Google Scholar profile to be added">Boyue Wang</a>
+        <a href="https://scholar.google.com/citations?user=P-XC6WoAAAAJ" target="_blank" rel="noopener" data-scholar-placeholder title="Google Scholar profile to be added">Soyoung Ahn</a>
+        <a href="https://scholar.google.com/citations?user=bO_JUSkAAAAJ" target="_blank" rel="noopener" data-scholar-placeholder title="Google Scholar profile to be added">David A. Noyce</a>
+        <a href="https://scholar.google.com/citations?user=DPN2wc4AAAAJ" target="_blank" rel="noopener" data-scholar-placeholder title="Google Scholar profile to be added">Sikai Chen<sup>*</sup></a>
+      </div>
+      <p class="affiliations">University of Wisconsin–Madison <span>·</span> Wisconsin Transportation Center</p>
+      <p class="correspondence">* Corresponding author</p>
+      <div class="resource-links">
+        <a class="button primary" href="https://arxiv.org/abs/2611.11516" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6m-6 4h6"/></svg>Paper <span aria-hidden="true">↗</span></a>
+        <a class="button" href="https://github.com/zihaosheng/NWM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 16"/></svg>Code <span aria-hidden="true">↗</span></a>
+        <a class="button" href="https://huggingface.co/zihaosheng/NWM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></svg>Model <span aria-hidden="true">↗</span></a>
+        <a class="button text-button" href="#video"><span class="play-symbol" aria-hidden="true">▶</span>Watch video</a>
+      </div>
+    </section>
+
+    <section class="generation-gallery container" aria-labelledby="gallery-title">
+      <div class="gallery-heading"><div><p class="eyebrow">GENERATED BY NWM</p><h2 id="gallery-title">Imagining futures.</h2></div><button class="gallery-toggle" id="gallery-toggle" type="button" aria-pressed="false">Play videos</button></div>
+      <div class="generation-grid">
+        <figure><video class="generation-video" controls muted loop playsinline preload="metadata" poster="assets/videos/generations/genvid_85_10_04574.jpg"><source src="assets/videos/generations/genvid_85_10_04574.mp4" type="video/mp4"></video></figure>
+        <figure><video class="generation-video" controls muted loop playsinline preload="metadata" poster="assets/videos/generations/genvid_126_10_04564.jpg"><source src="assets/videos/generations/genvid_126_10_04564.mp4" type="video/mp4"></video></figure>
+        <figure><video class="generation-video" controls muted loop playsinline preload="metadata" poster="assets/videos/generations/genvid_130_48_08911.jpg"><source src="assets/videos/generations/genvid_130_48_08911.mp4" type="video/mp4"></video></figure>
+        <figure><video class="generation-video" controls muted loop playsinline preload="metadata" poster="assets/videos/generations/genvid_98_43_08366.jpg"><source src="assets/videos/generations/genvid_98_43_08366.mp4" type="video/mp4"></video></figure>
+        <figure><video class="generation-video" controls muted loop playsinline preload="metadata" poster="assets/videos/generations/genvid_331_11_04513.jpg"><source src="assets/videos/generations/genvid_331_11_04513.mp4" type="video/mp4"></video></figure>
+        <figure><video class="generation-video" controls muted loop playsinline preload="metadata" poster="assets/videos/generations/genvid_139_11_02104.jpg"><source src="assets/videos/generations/genvid_139_11_02104.mp4" type="video/mp4"></video></figure>
+        <figure><video class="generation-video" controls muted loop playsinline preload="metadata" poster="assets/videos/generations/genvid_419_61_04230.jpg"><source src="assets/videos/generations/genvid_419_61_04230.mp4" type="video/mp4"></video></figure>
+        <figure><video class="generation-video" controls muted loop playsinline preload="metadata" poster="assets/videos/generations/genvid_496_11_07530.jpg"><source src="assets/videos/generations/genvid_496_11_07530.mp4" type="video/mp4"></video></figure>
+        <figure><video class="generation-video" controls muted loop playsinline preload="metadata" poster="assets/videos/generations/genvid_516_10_10378.jpg"><source src="assets/videos/generations/genvid_516_10_10378.mp4" type="video/mp4"></video></figure>
+      </div>
+    </section>
+
+
+    <section class="section container overview" id="overview" aria-labelledby="overview-title">
+      <div class="section-intro"><p class="eyebrow">01 / THE PROBLEM</p><h2 id="overview-title">A safe ending<br>can be a wrong prediction.</h2></div>
+      <div class="overview-copy"><p class="large-copy">Most driving datasets record interactions that ended safely. World models trained on them can inherit an optimistic view of what happens next.</p><p>When a collision is imminent, a model may imagine another vehicle disappearing, the ego vehicle stopping, or the scene freezing. These futures can look plausible while hiding the consequences of a dangerous action.</p><p>We introduce the <strong>Neutral World Model (NWM)</strong>: a controllable video diffusion model trained on both routine driving and real accident videos, with a bounding-box-guided objective that emphasizes surrounding road users.</p><div class="takeaway"><span aria-hidden="true">↳</span><p>The goal is faithful imagination of both safe and dangerous outcomes.</p></div></div>
+    </section>
+
+    <section class="method-section" id="method" aria-labelledby="method-title">
+      <div class="container section">
+        <div class="section-heading"><div><p class="eyebrow">02 / THE APPROACH</p><h2 id="method-title">Learn both kinds of future.<br>Imagine before choosing.</h2></div><p>A single framework connects future generation,<br class="desktop-break"> spatial control, and action selection.</p></div>
+        <figure class="paper-figure overview-figure"><a class="figure-zoom" href="assets/figures/overview.png" data-zoom aria-label="Enlarge the NWM architecture figure"><img src="assets/figures/overview.png" width="2400" height="1320" alt="NWM framework: routine and accident training data, SVD and ControlNet video generation with bounding-box-guided loss, and reward-based selection among imagined candidate trajectories." loading="lazy"><span class="zoom-hint">View figure <span aria-hidden="true">↗</span></span></a><figcaption><span>FIGURE 1</span> From diverse training futures to imagination-guided decisions.</figcaption></figure>
+        <div class="method-steps">
+          <article><span class="step-index">01</span><h3>Broaden the experience</h3><p>Combine nuScenes routine driving with MM-AU real accident videos to learn the outcomes underrepresented in conventional driving data.</p></article>
+          <article><span class="step-index">02</span><h3>Focus on road users</h3><p>A bounding-box-guided loss gives additional weight to agent regions while preserving the base video-generation objective.</p></article>
+          <article><span class="step-index">03</span><h3>Evaluate imagined actions</h3><p>Predict a future for each candidate ego trajectory, score safety, progress, and comfort, and select the highest-reward action.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="results" aria-labelledby="results-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / THE EVIDENCE</p><h2 id="results-title">More faithful futures.<br>Better-informed decisions.</h2></div><a class="inline-link" href="https://arxiv.org/abs/2611.11516" target="_blank" rel="noopener">Explore the full paper <span aria-hidden="true">↗</span></a></div>
+      <div class="result-tabs" role="tablist" aria-label="Experimental results">
+        <button id="tab-bias" role="tab" aria-selected="true" aria-controls="panel-bias" tabindex="0">Collision anticipation</button>
+        <button id="tab-routine" role="tab" aria-selected="false" aria-controls="panel-routine" tabindex="-1">Routine driving</button>
+        <button id="tab-control" role="tab" aria-selected="false" aria-controls="panel-control" tabindex="-1">Agent control</button>
+        <button id="tab-decision" role="tab" aria-selected="false" aria-controls="panel-decision" tabindex="-1">Action selection</button>
+      </div>
+      <div class="result-panel" id="panel-bias" role="tabpanel" aria-labelledby="tab-bias" tabindex="0">
+        <div class="result-copy"><span class="result-kicker">RECOVERING IMMINENT COLLISIONS</span><h3>Imagine the collision<br>that actually happens.</h3><p>At 0.5 s before collision, NWM recovers the collision in <strong>86%</strong> of 100 accident scenes, compared with <strong>9%</strong> for Vista and <strong>12%</strong> for GEM.</p><p>All models receive the same observation and recorded ego trajectory. Future motions of other agents are not supplied.</p><div class="bar-chart" role="img" aria-label="Collision recall at 0.5 seconds before collision: Vista 9 percent, GEM 12 percent, NWM 86 percent."><div><span>Vista</span><div class="bar-track"><i style="--value:9%"></i></div><b>9%</b></div><div><span>GEM</span><div class="bar-track"><i style="--value:12%"></i></div><b>12%</b></div><div class="highlight-bar"><span>NWM</span><div class="bar-track"><i style="--value:86%"></i></div><b>86%</b></div></div><p class="result-footnote">MM-AU validation set · n = 100 scenes per prediction starting point. Paper §3.3.</p></div>
+        <figure class="result-media"><div class="video-slot" data-video-slot="collisionAnticipation"><div class="video-placeholder" role="img" aria-label="Collision anticipation video placeholder"><span class="placeholder-play" aria-hidden="true">▶</span><p>Collision anticipation</p><span>Video coming soon</span></div><video controls playsinline preload="metadata" hidden aria-label="Collision anticipation video"></video></div></figure>
+      </div>
+      <div class="result-panel" id="panel-routine" role="tabpanel" aria-labelledby="tab-routine" tabindex="0" hidden>
+        <div class="result-copy"><span class="result-kicker">PRESERVING ROUTINE-DRIVING FIDELITY</span><h3>Recognize danger.<br>Keep safe futures safe.</h3><p>NWM’s false collision rate is <strong>8%</strong> on 50 collision-free MM-AU clips, compared with its 86% recall on imminent accident scenes in the same visual domain.</p><p>On 100 routine nuScenes clips, no evaluated model exceeds a <strong>1%</strong> false collision rate. NWM is comparable to or better than Vista and GEM across FID, FVD, and JEDi on both datasets.</p><div class="result-callout">The prediction should respond to the interaction, rather than simply associate the look of accident footage with a crash.</div><p class="result-footnote">MM-AU: n = 50 · nuScenes: n = 100 · Lower FID, FVD, and JEDi are better. Paper §3.4.</p></div>
+        <figure class="result-media"><div class="video-slot" data-video-slot="routineDriving"><div class="video-placeholder" role="img" aria-label="Routine driving video placeholder"><span class="placeholder-play" aria-hidden="true">▶</span><p>Routine driving</p><span>Video coming soon</span></div><video controls playsinline preload="metadata" hidden aria-label="Routine driving video"></video></div></figure>
+      </div>
+      <div class="result-panel" id="panel-control" role="tabpanel" aria-labelledby="tab-control" tabindex="0" hidden>
+        <div class="result-copy"><span class="result-kicker">CONTROLLABLE COUNTERFACTUAL FUTURES</span><h3>Same scene.<br>Different agent motions.</h3><p>Optional bounding-box controls let NWM realize prescribed agent motions, including adversarial and collision-avoidance trajectories generated with STRIVE for <strong>158 nuScenes scenes</strong>.</p><p>Realized lateral displacement follows prescribed displacement closely: <strong>R² = 0.97</strong> for vehicles and <strong>R² = 0.98</strong> for pedestrians. The bounding-box-guided loss improves control fidelity.</p><div class="result-callout">Here the agent’s future motion is prescribed. This experiment measures control fidelity; collision anticipation is evaluated without future agent controls.</div><p class="result-footnote">Metrics: mIoU, SR@0.5, and normalized center offset. Paper §3.5.</p></div>
+        <figure class="result-media"><div class="video-slot" data-video-slot="agentControl"><div class="video-placeholder" role="img" aria-label="Agent control video placeholder"><span class="placeholder-play" aria-hidden="true">▶</span><p>Agent control</p><span>Video coming soon</span></div><video controls playsinline preload="metadata" hidden aria-label="Agent control video"></video></div></figure>
+      </div>
+      <div class="result-panel" id="panel-decision" role="tabpanel" aria-labelledby="tab-decision" tabindex="0" hidden>
+        <div class="result-copy"><span class="result-kicker">REAL-WORLD VALIDATION</span><h3>Imagine the conflict.<br>Choose to brake.</h3><p>In six real-world pedestrian-dummy trials, NWM selects braking in <strong>100%</strong> of response-stage decision frames, compared with <strong>30%</strong> for Vista. Normal-stage accuracy is 90% for NWM and 100% for Vista.</p><div class="result-callout">Zero-shot, offline evaluation on sensor recordings from a human-driven research van. The model was not fine-tuned on these trials.</div><p class="result-footnote">Real-world evaluation: 5 normal + 5 response frames per trial. Paper §3.6.</p></div>
+        <figure class="result-media"><div class="video-slot" data-video-slot="actionSelection"><div class="video-placeholder" role="img" aria-label="Real-world action selection video placeholder"><span class="placeholder-play" aria-hidden="true">▶</span><p>Real-world action selection</p><span>Video coming soon</span></div><video controls playsinline preload="metadata" hidden aria-label="Real-world action selection video"></video></div></figure>
+      </div>
+      <p class="scope-note"><strong>Current scope.</strong> NWM uses a single front-facing camera. Generating a 25-frame video takes 23.11 ± 1.39 s on a single GPU in the reported setup, so the present system does not support real-time closed-loop deployment.</p>
+    </section>
+
+    <section class="video-section" id="video" aria-labelledby="video-title">
+      <div class="section container">
+        <div class="section-heading"><div><p class="eyebrow light-label">04 / VIDEO</p><h2 id="video-title">Video</h2></div></div>
+        <div class="video-slot showcase-slot" data-video-slot="showcase"><div class="video-placeholder" role="img" aria-label="Research video placeholder"><span class="placeholder-play" aria-hidden="true">▶</span><p>Research video</p><span>Video coming soon</span></div><video controls playsinline preload="metadata" hidden aria-label="NWM research video"></video></div>
+      </div>
+    </section>
+
+    <section class="section container abstract-section" aria-labelledby="abstract-title"><div class="section-intro"><p class="eyebrow">IN THE AUTHORS’ WORDS</p><h2 id="abstract-title">Abstract</h2></div><div class="abstract-copy"><p>World models allow autonomous vehicles to imagine the consequences of candidate actions before execution, but their reliability depends on the futures represented in their training data. We identify a survivorship bias in driving world models: because the futures recorded in prevailing driving datasets almost always end safely, existing models often imagine benign outcomes even when a collision is imminent. We introduce a neutral world model (NWM) that learns both routine and safety-critical futures from a mixture of routine driving and real accident videos with a bounding-box-guided objective. The NWM more faithfully anticipates imminent collisions, while maintaining a low false collision rate and competitive generation quality in routine driving. We further use the model as an imagination engine for decision-making. Given multiple ego trajectories, the NWM predicts the future associated with each candidate, and a reward function evaluates these imagined outcomes before selecting an action. On challenging NAVSIM scenarios, this procedure selects the better trajectory more reliably than the baseline world model. Zero-shot experiments with real-world pedestrian dummy crossing data collected using an autonomous research vehicle further demonstrate transfer to unseen sensor observations. These results show that correcting survivorship bias enables world models to more faithfully reason about futures and support safety-critical decision-making in autonomous driving.</p></div></section>
+
+    <section class="citation-section" id="citation" aria-labelledby="citation-title"><div class="container section"><div class="section-heading"><div><p class="eyebrow">05 / BUILD ON THIS WORK</p><h2 id="citation-title">Citation</h2></div><div class="citation-actions"><a class="inline-link" href="citation.bib" download>Download .bib ↓</a><button class="button copy-button" id="copy-citation" type="button">Copy BibTeX <span aria-hidden="true">⧉</span></button></div></div><pre class="citation-code"><code id="bibtex">@misc{sheng2026breaking,
+  title = {Breaking survivorship bias in driving world models},
+  author = {Sheng, Zihao and Huang, Zilin and Luo, Yuhao and
+            Wan, Zhengyang and Wang, Boyue and Ahn, Soyoung and
+            Noyce, David A. and Chen, Sikai},
+  year = {2026},
+  month = nov,
+  note = {Preprint},
+  eprint = {2611.11516},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2611.11516}
+}</code></pre><p id="copy-status" class="copy-status" role="status" aria-live="polite"></p></div></section>
+  </main>
+
+  <footer class="site-footer container"><a class="brand footer-brand" href="#top">NWM<span class="brand-dot">.</span></a><p>Neutral World Model<br><span>University of Wisconsin–Madison · Wisconsin Transportation Center</span></p><a class="inline-link" href="#top">Back to top ↑</a></footer>
+  <dialog id="figure-dialog" aria-labelledby="dialog-title"><div class="dialog-toolbar"><span id="dialog-title">Paper figure</span><button id="close-figure" type="button" aria-label="Close figure">Close <span aria-hidden="true">×</span></button></div><div class="dialog-image-wrap"><img id="dialog-image" alt=""></div></dialog>
+</body>
+</html>
