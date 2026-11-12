@@ -44,11 +44,11 @@
         <span class="author-row" style="display:flex;flex-wrap:wrap;justify-content:center;gap:inherit;flex-basis:100%;">
           <a href="https://scholar.google.com/citations?user=P-XC6WoAAAAJ" target="" rel="noopener" data-scholar-placeholder title="Google Scholar profile to be added">Soyoung Ahn</a>
           <a href="https://scholar.google.com/citations?user=bO_JUSkAAAAJ" target="" rel="noopener" data-scholar-placeholder title="Google Scholar profile to be added">David A. Noyce</a>
-          <a href="https://scholar.google.com/citations?user=DPN2wc4AAAAJ" target="" rel="noopener" data-scholar-placeholder title="Google Scholar profile to be added">Sikai Chen<sup>*</sup></a>
+          <a href="https://scholar.google.com/citations?user=DPN2wc4AAAAJ" target="" rel="noopener" data-scholar-placeholder title="Google Scholar profile to be added">Sikai Chen<sup><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Corresponding author"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg></sup></a>
         </span>
       </div>
       <p class="affiliations"><span class="affiliation-item"><img class="affiliation-logo affiliation-logo-uw" src="assets/logos/uw-madison.png" width="18" height="28" alt="" aria-hidden="true"><span>University of Wisconsin–Madison</span></span><span class="affiliation-divider" aria-hidden="true">·</span><span class="affiliation-item"><img class="affiliation-logo affiliation-logo-wtc" src="assets/logos/wtc-symbol.svg" width="29" height="26" alt="" aria-hidden="true"><span>Wisconsin Transportation Center</span></span></p>
-      <p class="correspondence"><span>* Corresponding author</span></p>
+      <p class="correspondence"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="correspondence-icon" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>Corresponding author</span></p>
       <div class="resource-links">
         <a class="button primary" href="https://arxiv.org/abs/2611.11516" target="" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6m-6 4h6"/></svg>Paper <span aria-hidden="true">↗</span></a>
         <a class="button" href="https://github.com/zihaosheng/NWM" target="" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 16"/></svg>Code <span aria-hidden="true">↗</span></a>
@@ -125,14 +125,11 @@
 
     <section class="section container abstract-section" aria-labelledby="abstract-title"><div class="section-intro"><p class="eyebrow">IN THE AUTHORS’ WORDS</p><h2 id="abstract-title">Abstract</h2></div><div class="abstract-copy"><p>World models allow autonomous vehicles to imagine the consequences of candidate actions before execution, but their reliability depends on the futures represented in their training data. We identify a survivorship bias in driving world models: because the futures recorded in prevailing driving datasets almost always end safely, existing models often imagine benign outcomes even when a collision is imminent. We introduce a neutral world model (NWM) that learns both routine and safety-critical futures from a mixture of routine driving and real accident videos with a bounding-box-guided objective. The NWM more faithfully anticipates imminent collisions, while maintaining a low false collision rate and competitive generation quality in routine driving. We further use the model as an imagination engine for decision-making. Given multiple ego trajectories, the NWM predicts the future associated with each candidate, and a reward function evaluates these imagined outcomes before selecting an action. On challenging NAVSIM scenarios, this procedure selects the better trajectory more reliably than the baseline world model. Zero-shot experiments with real-world pedestrian dummy crossing data collected using an autonomous research vehicle further demonstrate transfer to unseen sensor observations. These results show that correcting survivorship bias enables world models to more faithfully reason about futures and support safety-critical decision-making in autonomous driving.</p></div></section>
 
-    <section class="citation-section" id="citation" aria-labelledby="citation-title"><div class="container section"><div class="section-heading"><div><p class="eyebrow">05 / BUILD ON THIS WORK</p><h2 id="citation-title">Citation</h2></div><div class="citation-actions"><a class="inline-link" href="citation.bib" download>Download .bib ↓</a><button class="button copy-button" id="copy-citation" type="button">Copy BibTeX <span aria-hidden="true">⧉</span></button></div></div><pre class="citation-code"><code id="bibtex">@misc{sheng2026breaking,
+    <section class="citation-section" id="citation" aria-labelledby="citation-title"><div class="container section"><div class="section-heading"><div><p class="eyebrow">05 / BUILD ON THIS WORK</p><h2 id="citation-title">Citation</h2></div><div class="citation-actions"><a class="inline-link" href="citation.bib" download>Download .bib ↓</a><button class="button copy-button" id="copy-citation" type="button">Copy BibTeX <span aria-hidden="true">⧉</span></button></div></div><pre class="citation-code"><code id="bibtex">@article{sheng2026breaking,
   title = {Breaking survivorship bias in driving world models},
-  author = {Sheng, Zihao and Huang, Zilin and Luo, Yuhao and
-            Wan, Zhengyang and Wang, Boyue and Ahn, Soyoung and
-            Noyce, David A. and Chen, Sikai},
+  author = {Sheng, Zihao and Huang, Zilin and Luo, Yuhao and Wan, Zhengyang and Wang, Boyue and Ahn, Soyoung and Noyce, David A. and Chen, Sikai},
   year = {2026},
-  month = nov,
-  note = {Preprint},
+  journal = {arXiv preprint arXiv:2611.11516},
   eprint = {2611.11516},
   archivePrefix = {arXiv},
   primaryClass = {cs.RO},
